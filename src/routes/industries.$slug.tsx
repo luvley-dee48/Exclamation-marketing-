@@ -71,7 +71,7 @@ function IndustryPage() {
             <p className="eyebrow">Our Approach</p>
             <h2 className="mt-5 font-display text-3xl sm:text-4xl">How we work in this sector.</h2>
             <ul className="mt-8 space-y-4">
-              {industry.approach.map((a) => (
+              {industry.approach.map((a: string) => (
                 <li key={a} className="flex gap-3">
                   <Check className="mt-1 size-5 shrink-0 text-gold" />
                   <span>{a}</span>
@@ -83,7 +83,7 @@ function IndustryPage() {
             <div className="card-luxe p-8">
               <p className="eyebrow">Services We Deliver</p>
               <div className="mt-6 flex flex-wrap gap-2">
-                {industry.services.map((s) => (
+                {industry.services.map((s: string) => (
                   <span key={s} className="tag-sector text-xs">{s}</span>
                 ))}
               </div>

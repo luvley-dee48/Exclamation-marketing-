@@ -74,7 +74,7 @@ function ServicePage() {
             <p className="eyebrow">What We Deliver</p>
             <h2 className="mt-5 font-display text-3xl sm:text-4xl">Capabilities, end to end.</h2>
             <ul className="mt-8 space-y-4">
-              {service.deliverables.map((d) => (
+              {service.deliverables.map((d: string) => (
                 <li key={d} className="flex gap-3">
                   <Check className="mt-1 size-5 shrink-0 text-gold" />
                   <span>{d}</span>
@@ -91,7 +91,7 @@ function ServicePage() {
                 Industries We Serve
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
-                {service.industries.map((i) => (
+                {service.industries.map((i: string) => (
                   <span key={i} className="tag-sector text-xs">
                     {i}
                   </span>
